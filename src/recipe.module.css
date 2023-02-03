@@ -22,6 +22,8 @@
     color:white;
     background-color: red;
 }
-@media screen {
-    
-}
+@media only screen and (max-width: 600px) {
+    .recipe{
+        width: 100%;
+    }
+  }

@@ -6,7 +6,7 @@ const Recipe = ({tittle, images, calories, ingredients}) => {
     })
     return(
         <div style={{backgroundImage:`url(${images})`, backgroundRepeat: 'no-repeat!important', backgroundSize: 'cover', backgroundPosition: 'center'}} className={style.recipe}>
-            <h1>{tittle}</h1>
+            <h1 style={{paddingLeft:'10px', paddingRight:'10px'}}>{tittle}</h1>
             <ol className="">
                 {ingredients.map(ingredient =>
                         <li style={{textShadow:'0.5px 0.5px rgba(255,255,255,1)', color:'rgba(0,0,0,1)'}} id="ingredient">{ingredient.text}</li>
